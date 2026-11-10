@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="En datavisualisering af offentligt oplyste priser på boller med ost i København.">
+  <title>Hvad koster en bolle med ost? · København</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#indhold">Spring til indhold</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Bolleindekset, til toppen"><span class="brand-icon" aria-hidden="true">◒</span> BOLLE<span class="brand-light">INDEKSET</span><span class="brand-dot">.</span></a>
+    <nav aria-label="Hovednavigation"><a href="#priser">Priser</a><a href="#pivot">Pivottabel</a><a href="#metode">Metode</a></nav>
+    <a class="header-action" href="#priser">Se tallene <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="indhold">
+    <section class="hero section" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> KØBENHAVN · PRISUNDERSØGELSE 2026</div>
+        <h1 id="hero-title">Hvor dyr er<br>en <em>bolle</em><br>med ost<span class="question">?</span></h1>
+        <p class="hero-description">Fra en hurtig morgenbid til en lille luksus. Vi har sammenlignet offentligt oplyste menukortpriser fra seks caféer i København.</p>
+        <div class="hero-links"><a class="button button-dark" href="#priser">Udforsk priserne <span aria-hidden="true">↗</span></a><a class="text-link" href="#metode">Sådan er tallene fundet <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration af en rund bolle med smør og ost" role="img">
+        <div class="art-circle"></div><div class="art-label label-top">EN DANSK<br>KLASSIKER</div><div class="art-label label-bottom">01 / 06</div>
+        <svg class="bun" viewBox="0 0 560 500" aria-hidden="true">
+          <defs><linearGradient id="bread" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#e4a74e"/><stop offset=".48" stop-color="#bb6d25"/><stop offset="1" stop-color="#8d461f"/></linearGradient><linearGradient id="breadlight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2c784"/><stop offset="1" stop-color="#ce8a39"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="13"/></filter></defs>
+          <ellipse cx="290" cy="418" rx="192" ry="26" fill="#29190d" opacity=".19" filter="url(#shadow)"/>
+          <g transform="rotate(-9 280 265)"><path d="M88 297Q91 244 182 221Q294 194 408 222Q479 239 486 290Q488 348 414 372Q284 411 155 363Q92 342 88 297Z" fill="url(#bread)" stroke="#80401d" stroke-width="7"/><path d="M101 282Q154 244 267 252Q396 252 471 274L471 308Q360 331 228 321Q141 318 102 305Z" fill="#fff2d5"/><path d="M110 257Q194 198 326 210Q416 217 464 252L453 279Q361 247 256 259Q172 267 119 289Z" fill="#f4d77a" stroke="#e1b949" stroke-width="6"/><path d="M122 244Q162 210 227 194Q307 175 394 197Q434 207 450 232L454 247Q365 229 284 238Q177 238 122 262Z" fill="#f9df8c"/><path d="M93 242Q94 139 215 105Q294 84 378 123Q469 166 479 241Q478 254 462 261Q360 215 269 225Q155 225 105 270Q94 264 93 242Z" fill="url(#breadlight)" stroke="#99501d" stroke-width="8"/><path d="M125 207Q153 145 241 126Q325 110 394 160" fill="none" stroke="#f6d49c" stroke-width="12" stroke-linecap="round" opacity=".7"/><g fill="#f6da99" opacity=".85"><ellipse cx="177" cy="159" rx="6" ry="3" transform="rotate(-20 177 159)"/><ellipse cx="233" cy="147" rx="5" ry="2.4"/><ellipse cx="318" cy="144" rx="5" ry="2.5"/><ellipse cx="371" cy="171" rx="6" ry="2.5"/><ellipse cx="260" cy="174" rx="5" ry="2.3"/><ellipse cx="408" cy="202" rx="5" ry="2.3"/></g></g>
+        </svg>
+        <div class="art-stamp">SMØR · OST · BRØD</div>
+      </div>
+    </section>
+    <section class="stats-strip" aria-label="Nøgletal">
+      <div class="stat"><span class="stat-label">BILLIGSTE BOLLE</span><strong>34 <small>kr.</small></strong><span>Kaffesalonen</span></div>
+      <div class="stat"><span class="stat-label">GENNEMSNITSPRIS</span><strong>43 <small>kr.</small></strong><span>6 udvalgte caféer · afrundet</span></div>
+      <div class="stat"><span class="stat-label">DYRESTE BOLLE</span><strong>59 <small>kr.</small></strong><span>Den Go'e Kaffebar</span></div>
+      <div class="stat stat-accent"><span class="stat-label">FORSKEL FRA LAVEST TIL HØJEST</span><strong>25 <small>kr.</small></strong><span>For samme overordnede ret</span></div>
+    </section>
+    <section class="section insight-intro" id="priser" aria-labelledby="prices-title">
+      <div class="section-kicker">01 / DET STORE OVERBLIK</div>
+      <div class="section-heading"><h2 id="prices-title">En lille bolle.<br><em>En stor forskel.</em></h2><p>Den billigste bolle med ost i dette udvalg koster 34 kr. Den dyreste koster 59 kr. Her kan du sammenligne priserne direkte – uden at bladre gennem menukort.</p></div>
+      <div class="chart-card"><div class="chart-top"><div><h3>Priser på tværs af caféer</h3><p>Offentligt annonceret pris for én bolle med ost · DKK</p></div><div class="chart-legend"><span></span> Pris (kr.)</div></div><div class="bar-chart" id="bar-chart" role="img" aria-label="Søjlediagram: Kaffesalonen 34 kr., Segall's 35 kr., Café Lili 35 kr., Family Zoo 40 kr., P88 54 kr., Den Go'e Kaffebar 59 kr."></div><div class="chart-footnote">Priserne beskriver menukortene, ikke nødvendigvis ens størrelse eller ingredienser. Kilder og dato findes nederst.</div></div>
+    </section>
+    <section class="section split-insights" aria-labelledby="insights-title"><div class="insights-story"><div class="section-kicker">02 / HVAD FORTÆLLER TALLENE?</div><h2 id="insights-title">Din ostebolle<br>har <em>et spænd.</em></h2><p>Forskellen mellem laveste og højeste pris er <strong>25 kr.</strong> I dette lille udvalg koster tre ud af seks boller under 40 kr.</p><div class="insight-line"><span class="big-number">3<span>/6</span></span><p>af de undersøgte steder har en pris under 40 kr.</p></div><a href="#pivot" class="text-link">Dyk ned i data <span aria-hidden="true">↗</span></a></div><div class="distribution-card"><span class="mini-label">PRISFORDELING</span><div class="ring" role="img" aria-label="3 caféer under 40 kroner, 1 café mellem 40 og 49 kroner og 2 caféer fra 50 kroner"><div class="ring-center"><strong>6</strong><span>CAFÉER</span></div></div><div class="ring-legend"><div><span class="dot d1"></span><strong>3</strong> Under 40 kr.</div><div><span class="dot d2"></span><strong>1</strong> 40–49 kr.</div><div><span class="dot d3"></span><strong>2</strong> 50 kr. og over</div></div></div></section>
+    <section class="section pivot-section" id="pivot" aria-labelledby="pivot-title"><div class="section-kicker">03 / UNDERSØG SELV DATAENE</div><div class="section-heading"><h2 id="pivot-title">Tallene bag<br><em>morgenmaden.</em></h2><p>En pivottabel samler data efter kategorier. Vælg selv, hvordan caféerne grupperes, og om du vil se antal steder eller gennemsnitspris.</p></div><div class="pivot-panel"><div class="pivot-controls"><div class="field"><label for="pivot-group">Gruppér rækker efter</label><select id="pivot-group"><option value="area">Bydel</option><option value="band">Prisniveau</option></select></div><div class="field"><label for="pivot-measure">Vis i cellerne</label><select id="pivot-measure"><option value="count">Antal caféer</option><option value="avg">Gennemsnitlig pris</option></select></div><div class="pivot-help">↗ Ændr felterne for at opdatere pivottabellen</div></div><div class="table-scroll"><table id="pivot-table"><caption>Interaktiv pivottabel over caféernes priser</caption><thead><tr><th scope="col" id="pivot-row-heading">Bydel</th><th scope="col">Under 40 kr.</th><th scope="col">40–49 kr.</th><th scope="col">50+ kr.</th><th scope="col">I alt</th></tr></thead><tbody id="pivot-body"></tbody></table></div><p class="pivot-note" id="pivot-note" aria-live="polite"></p></div><div class="source-list-section"><div class="source-list-heading"><h3>Alle seks caféer</h3><p>Menukortpriser og direkte links til kilderne</p></div><div class="cafe-list" id="cafe-list"></div></div></section>
+    <section class="section method-section" id="metode" aria-labelledby="method-title"><div><div class="section-kicker">04 / METODE & FORBEHOLD</div><h2 id="method-title">Data med<br><em>åbne kort.</em></h2></div><div class="method-copy"><p>Vi har udvalgt seks caféer i København og Frederiksberg med offentligt tilgængelige priser på en bolle med ost eller en tilsvarende bolle med smør og ost. Priserne er aflæst fra deres egne hjemmesider den <strong>10. november 2026</strong>.</p><p>Undersøgelsen er et <strong>bekvemmelighedsudvalg</strong> og kan ikke bruges til at udtale sig om gennemsnitsprisen i hele København. Portionsstørrelse, ostetype, servering og prisændringer kan variere. Tallene er ikke korrigeret for dette.</p><div class="method-tag">6 MENUER</div><div class="method-tag">PRIMÆRKILDER</div><div class="method-tag">DKK · NOV 2026</div></div></section>
+    <section class="cta-section" aria-labelledby="cta-title"><div class="cta-small">DEN NÆSTE BOLLE ER DIN</div><h2 id="cta-title">Nu ved du, hvad<br>osten <em>koster.</em></h2><p>Find et sted, der passer til dit budget. Dobbelttjek altid prisen på caféens aktuelle menukort, inden du tager afsted.</p><a class="button button-light" href="#pivot">Se caféerne og kilderne <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="footer"><div class="brand">BOLLE<span class="brand-light">INDEKSET</span><span class="brand-dot">.</span></div><span>Studieprojekt · Datavisualisering · November 2026</span><a href="#top">Til toppen ↑</a></footer>
+</body>
+</html>
